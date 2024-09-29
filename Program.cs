@@ -12,10 +12,12 @@ namespace CatsAndDogs
         {
             Cats cat = new Cats("Mona",10,"British");
             Dogs dog = new Dogs("Ben",10,"Chihua-hua");
+            Person person = new Person("Lexa");
+            person.Animals.Add(dog);
+            person.Animals.Add(cat);
             dog.Owned();
             cat.Owned();
-            Console.WriteLine(dog);
-            Console.WriteLine(cat);
+            Console.WriteLine(person);
             Console.ReadKey();
         }
     }
